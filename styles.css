@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    background-image: url('img/gym.jpg'); /* Cambia esto por tu imagen */
+    background-size: cover; /* Para que cubra todo el fondo */
+    background-position: center; /* Centrar la imagen */
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.draggable {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(117, 168, 185);
+    border: 2px solid #e100ff;
+    border-radius: 10px;
+    cursor: grab;
+}
+
+.draggable img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.drop-zones {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.drop-zone {
+    width: 150px;
+    height: 120px;
+    border: 2px dashed #ff009d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    text-align: center;
+    background: none; /* Sin fondo */
+    color: transparent; /* Inicialmente sin color para usar degradado */
+    background: linear-gradient(to right, red, orange); /* Degradado rojo-naranja */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.drop-zone {
+    width: 150px;
+    height: 120px;
+    border: 2px dashed #ff009d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+.message-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco translúcido */
+    padding: 20px;
+    border: 3px solid #ff009d; /* Borde en el mismo color rosa */
+    border-radius: 15px; /* Bordes redondeados */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to right, red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Hace que el fondo del degradado sea el color del texto */
+    margin-bottom: 20px;
+}
+
+.message-container p {
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(to right, red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+
+.message-container p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; /* Texto oscuro */
+    margin-bottom: 20px;
+}
+
+.message-container button {
+    padding: 10px 20px;
+    background-color: rgb(117, 168, 185); /* Fondo similar a los bloques draggable */
+    color: white; /* Texto blanco */
+    font-weight: bold;
+    border: 2px solid #e100ff; /* Borde como los draggable */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.message-container button:hover {
+    background-color: #ff009d; /* Rosa intenso al pasar el cursor */
+    border-color: #ff009d;
+}
+.error-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: red;
+    font-weight: bold;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    pointer-events: none; /* Para que no interfiera con otros elementos */
+}
+.success-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: green;
+    font-weight: bold;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    pointer-events: none; /* Para que no interfiera con otros elementos */
+}
