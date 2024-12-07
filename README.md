@@ -1,0 +1,20 @@
+# Actividad VideojuegoJS
+VideojuegoJS
+UNIVERSIDAD TECNOLÓGICA DE LA SIERRA HIDALGUENSE
+INGENIERÍA EN DESARROLLO Y GESTIÓN DE SOFTWARE MULTIPLATAFORMA   
+
+
+Desarrollo de Aplicaciones Web Progresivas
+
+VideojuegoJS
+
+Juan Francisco Hernández
+2021020
+
+10IDGSM-G1
+
+
+
+
+
+ZACUALTIPÁN DE ÁNGELES, HGO, A 09 DE OCTUBRE 2024.
